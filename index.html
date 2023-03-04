@@ -1,153 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Ahiyar</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<link rel="icon" type="image/png" href="images/ahiyarfav.png">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-@media (max-width: 992px) and (min-width:847px) {
-    .w3-hide-medium {
-        display:none!important
-    }
+    <title>Ahiyar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=0.6667, user-scalable=no" name="viewport">
+    <link rel="icon" type="image/png" href="images/ahiyarfav.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @media (max-width: 992px) and (min-width:847px) {
+            .w3-hide-medium {
+                display: none !important
+            }
 
-    .rd-hide{
-      display:none!important;
-    }
-}
+            .rd-hide {
+                display: none !important;
+            }
+        }
 
-@media (max-width: 846px) {
-    .w3-modal-content {
-        margin:0 10px;
-        width: auto!important
-    }
+        @media (max-width: 846px) {
+            .w3-modal-content {
+                margin: 0 10px;
+                width: auto !important
+            }
 
-    .w3-modal {
-        padding-top: 30px
-    }
+            .w3-modal {
+                padding-top: 30px
+            }
 
-    .w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content {
-        position: relative
-    }
+            .w3-dropdown-hover.w3-mobile .w3-dropdown-content, .w3-dropdown-click.w3-mobile .w3-dropdown-content {
+                position: relative
+            }
 
-    .w3-hide-small {
-        display: none!important
-    }
+            .w3-hide-small {
+                display: none !important
+            }
 
-    .w3-mobile {
-        display: block;
-        width: 100%!important
-    }
+            .w3-mobile {
+                display: block;
+                width: 100% !important
+            }
 
-    .w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile {
-        text-align: center
-    }
+            .w3-bar-item.w3-mobile, .w3-dropdown-hover.w3-mobile, .w3-dropdown-click.w3-mobile {
+                text-align: center
+            }
 
-    .w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button {
-        width: 100%
-    }
-}
+                .w3-dropdown-hover.w3-mobile, .w3-dropdown-hover.w3-mobile .w3-btn, .w3-dropdown-hover.w3-mobile .w3-button, .w3-dropdown-click.w3-mobile, .w3-dropdown-click.w3-mobile .w3-btn, .w3-dropdown-click.w3-mobile .w3-button {
+                    width: 100%
+                }
+        }
 
-.mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
+        .mySlides {
+            display: none
+        }
 
-/* Center the loader */
-#loader {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 100px;
-  height: 100px;
-  margin: 76px 0px 0 -55px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #cbef08;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
+        .w3-left, .w3-right, .w3-badge {
+            cursor: pointer
+        }
 
-#bgloader{
-  background-color:#3d3c3c;
-  position: fixed;
-  z-index: 2;
-  height: 100%;
-  width: 100%;
-}
+        .w3-badge {
+            height: 13px;
+            width: 13px;
+            padding: 0
+        }
 
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
+        /* Center the loader */
+        #loader {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            width: 100px;
+            height: 100px;
+            margin: 76px 0px 0 -55px;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #cbef08;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+        #bgloader {
+            background-color: #3d3c3c;
+            position: fixed;
+            z-index: 2;
+            height: 100%;
+            width: 100%;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
 
 
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
 
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
-}
+        @-webkit-keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
-}
+            to {
+                bottom: 0px;
+                opacity: 1
+            }
+        }
 
-#myDiv {
-  display: none;
-  text-align: center;
-}
+        @keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
 
-body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-.bgimg {
-  background-image: url("https://rare-gallery.com/uploads/posts/580620-fingers-hand.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;/*Attachmen resmin hareketli davranabilmesi içindir*/
-}
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
 
-.bgimg2 {
-  background-image: url("images/afrikasu.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;/*Attachmen resmin hareketli davranabilmesi içindir*/
-}
-.text-success {
-    color: white!important;
-}
+        #myDiv {
+            display: none;
+            text-align: center;
+        }
 
-.socialmedia{
-  color: #cbef08 !important;
-}
-.lgimg
-{
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("images/logo.png");
-  min-height: 100%;
-}
-</style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .w3-bar, h1, button {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .fa-anchor, .fa-coffee {
+            font-size: 200px
+        }
+
+        .bgimg {
+            background-image: url("https://rare-gallery.com/uploads/posts/580620-fingers-hand.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /*Attachmen resmin hareketli davranabilmesi içindir*/
+        }
+
+        .bgimg2 {
+            background-image: url("images/afrikasu.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /*Attachmen resmin hareketli davranabilmesi içindir*/
+        }
+
+        .text-success {
+            color: white !important;
+        }
+
+        .socialmedia {
+            color: #cbef08 !important;
+        }
+
+        .lgimg {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("images/logo.png");
+            min-height: 100%;
+        }
+    </style>
 </head>
 
 
