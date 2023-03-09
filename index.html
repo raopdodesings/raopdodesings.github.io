@@ -10,8 +10,18 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
 <style>
-@media (max-width: 992px) and (min-width:847px) {
+  @media (max-width: 330px){
+    
+
+    .rd-hide2{
+      display:none!important;
+    }
+}
+@media (max-width: 992px) and (min-width:898px) {
     .w3-hide-medium {
         display:none!important
     }
@@ -21,7 +31,9 @@
     }
 }
 
-@media (max-width: 846px) {
+
+
+@media (max-width: 897px) {
     .w3-modal-content {
         margin:0 10px;
         width: auto!important
@@ -63,12 +75,12 @@
   left: 50%;
   top: 50%;
   z-index: 1;
-  width: 100px;
-  height: 100px;
-  margin: 76px 0px 0 -55px;
-  border: 16px solid #f3f3f3;
+  width: 252px;
+  height: 252px;
+  margin: -125px 0px 0px -125px;
+  border: 4px solid #dcdcdc;
   border-radius: 50%;
-  border-top: 16px solid #cbef08;
+  border-top: 4px solid #cbef08;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -115,8 +127,10 @@
   text-align: center;
 }
 
-body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+body,h1,h2,h3,h4,h5,h6 {/*font-family: "Montserrat", sans-serif*/
+font-family: 'Josefin Sans', sans-serif;}
+.w3-bar,h1,button {/*font-family: "Montserrat", sans-serif*/
+font-family: 'Josefin Sans', sans-serif;}
 .fa-anchor,.fa-coffee {font-size:200px}
 .bgimg {
   background-image: url("https://rare-gallery.com/uploads/posts/580620-fingers-hand.jpg");
@@ -126,6 +140,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     background-attachment: fixed;/*Attachmen resmin hareketli davranabilmesi içindir*/
 }
 
+.kaydirici{
+  margin: 0px 0px 0px -20px;
+}
 .bgimg2 {
   background-image: url("images/afrikasu.jpg");
     background-size: cover;
@@ -135,6 +152,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 }
 .text-success {
     color: white!important;
+}
+
+.text-success2 {
+    color: #3d3c3c!important;
 }
 
 .socialmedia{
@@ -153,42 +174,54 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <body onload="onLoader()">
   <div id="bgloader">
-    <div class="w3-container w3-padding-32 w3-center animate-bottom" style="margin-top: 150px;display: block;" id="myDiv">  
-      <img src="images/logo2.png" alt="Me" class="w3-image" style="display:block;margin:-140px auto 200px auto" width="250px" height="200px">
+    <div class="w3-container w3-padding-32 w3-center " style="margin-top: 150px;display: block;" id="myDiv">  
+      <img src="images/logo2.png" alt="Me" class="w3-image" style="display:block;margin:0px auto 0px auto" width="150" height="150">
+      <!--<div id="loader"></div>-->
+      <!--<p class="animate-bottom"style="color:#cbef08;font-family: sans-serif; margin: 50px;"><b>“ İyilik , insanı insan kılan değerlerin tamamıdır. ”</b></p>-->
+      <img src="images/text.png" alt="Me" class="w3-image animate-bottom" style="display:block;margin:0px auto 0px auto" width="550" height="250">
     </div>
-  <div id="loader"></div>
-</div>
+  </div>
+  
 <!-- Navbar Normal Düzen -->
 <div class="w3-top">
-  <div class="w3-bar w3-card w3-left-align w3-large w3-hover-opacity-off" style="background-color:#3d3c3c;">
-    <a class="w3-bar-item w3-button rd-hide w3-hide-large w3-right w3-padding-large w3-hover-lime w3-large" style="background-color:#3d3c3c; height: 60px;" href="javascript:void(0);" onclick="myFunction()" title="Menu"><i class="fa fa-bars text-success"></i></a>
+  <!--Üst Menü-->
+  <div class="w3-bar w3-card w3-left-align w3-large w3-hover-opacity-off" style="background-color:#3d3c3c;height: 30px;border-bottom: 0px solid gainsboro;">
+    <div class="w3-bar-item w3-left" style="width: 255px; height: 45px;padding:15px 0px 0px 6px;margin: -12px 5px 0px 0px;">
+      <p style="color:#cbef08;margin: -10px 0px 0px 0px;font-size:12px;font-family: sans-serif;padding: 13px 0px 0px 0px;"><b>Hayallere Umut Olabilmek için... </b><i class="fa fa-heart text-success"></i></p>
+    </div>
+    <div class="w3-bar-item w3-right" style="width: 65px; height: 45px;padding:15px 0px 0px 6px;margin: -12px 5px 0px 0px;">
+      <a href="#"><i class="fa fa-facebook-official socialmedia" style="margin: 0px auto 0px px;"></i></a>
+      <a href="#"><i class="fa fa-instagram socialmedia"></i></a>
+      <a href="#"><i class="fa fa-twitter socialmedia"></i></a>
+    </div>
+  </div>
+  <!--Alt Menü-->
+  <div class="w3-bar w3-card w3-left-align w3-large w3-hover-opacity-off" style="background-color:#3d3c3c;font-family: 'Josefin Sans', sans-serif;">
+    <a class="w3-bar-item w3-button rd-hide w3-hide-large w3-right w3-padding-large w3-hover-lime w3-large" style="background-color:#3d3c3c; height: 60px;width: 50px;" href="javascript:void(0);" onclick="myFunction()" title="Menu"><i class="fa fa-bars text-success" style="margin: 0px auto 0px -6px;"></i></a>
     <a href="#" class="lgimg w3-bar-item w3-button " style="width: 130px; height: 50px; margin-bottom: 10px;"></a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-lime" style="color:#cbef08;font-size: medium;margin-top: 5px;border-radius: 15px; "><b>KURUMSAL</b></a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-lime" style="color:#cbef08 ;font-size:medium;margin-top: 5px;border-radius: 15px;"><b>PROJELERIMIZ</b></a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-lime" style="color:#cbef08 ;font-size:medium;margin-top: 5px;border-radius: 15px;"><b>MAĞAZA</b></a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-lime" style="color:#cbef08 ;font-size:medium;margin-top: 5px;border-radius: 15px;"><b>İLETİŞİM</b></a>
-      <div  class="w3-bar-item w3-right" style="width: 150px; height: 50px; padding-top: 15px;">
-        <a href="#"><i class="fa fa-facebook-official socialmedia"></i></a>
-        <a href="#"><i class="fa fa-instagram socialmedia"></i></a>
-        <a href="#"><i class="fa fa-snapchat socialmedia"></i></a>
-        <a href="#"><i class="fa fa-pinterest-p socialmedia"></i></a>
-        <a href="#"><i class="fa fa-twitter socialmedia"></i></a>
-        <a href="#"><i class="fa fa-linkedin socialmedia"></i></div></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-lime" style="color:#cbef08;font-size: medium;margin-top: 5px;border-radius: 15px; "><b>Kurumsal</b></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-lime" style="color:#cbef08 ;font-size:medium;margin-top: 5px;border-radius: 15px;"><b>Projelerimiz</b></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-lime" style="color:#cbef08 ;font-size:medium;margin-top: 5px;border-radius: 15px;"><b>Mağaza</b></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-lime" style="color:#cbef08 ;font-size:medium;margin-top: 5px;border-radius: 15px;"><b>Gönüllülük</b></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-lime" style="color:#cbef08 ;font-size:medium;margin-top: 5px;border-radius: 15px;"><b>İletişim</b></a>
+    <a href="#" class="w3-bar-item w3-button  w3-hover-red w3-right w3-green" style="color:#cbef08 ;font-size:small;margin-top: 5px;border-radius: 15px;margin: 10px 5px 0px 0px;padding:10px 0px 0px 0px;width: 85px;height:40px ;"><b>Bağış Yap <i class="fa fa-heart text-success"></i></b></a>
+    <a href="#" class="w3-bar-item w3-button  w3-hover-green w3-right w3-red rd-hide2" style="color:#cbef08 ;font-size:small;margin-top: 5px;border-radius: 15px;margin: 10px 5px 0px 0px;padding:10px 0px 0px 0px;width: 85px;height:40px ;"><b>Yardım İste <i class="fa fa-heart text-success"></i></b></a>
   </div>
 
   <!-- Navbar Küçük Ekranlar için -->
   <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large rd-hide w3-large" style="background:#3d3c3c;color: #cbef08;" >
-    <a href="#" class="w3-bar-item w3-button w3-padding-large" style="font-size: medium;"><b>KURUMSAL</b></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large" style="font-size: medium;"><b>PROJELERIMIZ</b></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large" style="font-size: medium;"><b>MAĞAZA</b></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large" style="font-size: medium;"><b>İLETİŞİM</b></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" style="font-size: medium;"><b>Kurumsal</b></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" style="font-size: medium;"><b>Projelerimiz</b></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" style="font-size: medium;"><b>Mağaza</b></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" style="font-size: medium;"><b>Gönüllülük</b></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" style="font-size: medium;"><b>İletişim</b></a>
   </div>
 </div>
 
 <!-- Başlangıç -->
-<header class="bgimg w3-container w3-black w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo" style="color:#cbef08;font-weight: 700;font-family:sans-serif">AHİYAR</h1>
-  <p class="w3-xlarge" style="font-family: sans-serif;font-weight: 700;">“İyilik, insanı insan kılan değerlerin tamamıdır.”</p>
+<header class="bgimg w3-container w3-black w3-center" style="padding:180px 16px;height: 620px;">
+  <h1 class="w3-margin w3-jumbo" style="color:#cbef08;font-weight: 700;font-family: 'Josefin Sans', sans-serif;">AHİYAR</h1>
+  <p class="w3-xlarge" style="font-family: 'Josefin Sans', sans-serif;font-weight: 700;">“İyilik, insanı insan kılan değerlerin tamamıdır.”</p>
   <button class="w3-button w3-green w3-padding-large w3-large w3-margin-top w3-hover-red" style="border-radius: 15px;">Bağış Yap <i class="fa fa-heart text-success"></i></button>
 </header>
 <!--Ahiyar nedir bölümü-->
@@ -203,10 +236,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   
 <!-- Galeri bölümü-->
 <div class="w3-container w3-center w3-padding-large" style="background-color:#3d3c3c ;height: 100px;margin-top: 100px">
-  <h1 class="w3-margin w3-xlarge" style="color:#cbef08; font-family: sans-serif;"><b>GALERI</b></h1>
+  <h1 class="w3-margin w3-xlarge" style="color:#cbef08;"><b>MEDYA</b></h1>
 </div>
 
-<div class="w3-row-padding w3-padding-16 w3-center" style="background-color:#dcdcdc;font-family: sans-serif;font-weight: 700;" id="food">
+<div class="w3-row-padding w3-padding-16 w3-center" style="background-color:#dcdcdc;font-weight: 700;" id="food">
   <div class="w3-quarter">
     <img src="images/urun.png" alt="Sandwich" style="width:100%;max-height: 500px;">
     <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
@@ -229,7 +262,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
 </div>
 
-<div class="w3-row-padding w3-padding-16 w3-center" style="background-color:#dcdcdc ;font-family: sans-serif;font-weight: 700;" id="food">
+<div class="w3-row-padding w3-padding-16 w3-center" style="background-color:#dcdcdc ;font-weight: 700;" id="food">
   <div class="w3-quarter">
     <img src="images/urun.png" alt="Sandwich" style="width:100%;max-height: 500px;">
     <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
@@ -287,7 +320,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </div>
 
 <div class="bgimg2 w3-container w3-black w3-center w3-padding-64">
-    <h1 class="w3-margin w3-xlarge" style="color:white;text-shadow:0em 0 01em black;font-family: sans-serif;"><b>“ Baş başa vermedikçe Taş yerinden kalkmaz. ”</b></h1>
+    <h1 class="w3-margin w3-xlarge" style="color:white;text-shadow:0em 0 01em black;"><b>“ Baş başa vermedikçe Taş yerinden kalkmaz. ”</b></h1>
 </div>
 
 <!-- Footer -->
@@ -296,27 +329,36 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div class="w3-quarter" style="min-width:250px;margin-bottom: 60px;">
       <img src="images/logo.png" alt="Pasta and Wine" style="width:100%;max-height: 500px;">
     </div>
-    <div class="w3-quarter" style="text-align: left; color:#cbef08;font-family: sans-serif;font-weight: 600;min-width: 250px">
-      <h3 style="text-align: left;margin-left: 35px;font-weight: 700;color: white;border-bottom: 1px solid #cbef08;">SAYFALAR</h3>
+    <div class="w3-quarter kaydirici" style="text-align: left; color:#f9f9f9;font-weight: 600;min-width: 250px;">
+      <h4 style="text-align: left;margin-left: 35px;font-weight: 700;color: #b6b6b6;border-bottom: 1px solid #b6b6b6;">Ahiyar Derneği</h4>
       <ul style="list-style-type: none;">
-        <li class="w3-hover">❯ Kurumsal</li>
-        <li>❯ Projelerimiz</li>
-        <li>❯ Mağaza</li>
-        <li>❯ Gönüllü Ol</li>
-        <li>❯ Bağış Yap</li>
-        <li>❯ Tüzük</li>
-        <li>❯ İletişim</li>
+        <li>Derneğin Amacı</li>
+        <li>Yönetim Kurulu</li>
+        <li>Projelerimiz</li>
+        <li>Tüzük</li>
+        <li>İletişim</li>
       </ul>
       
     </div>
-    <div class="w3-quarter" style="text-align: left; color:#cbef08;font-family: sans-serif;font-weight: 600;min-width: 250px">
-      <h3 style="text-align: left;margin-left: 35px;font-weight: 700;color: white;border-bottom: 1px solid #cbef08;">İLETİŞİM</h3>
+    <div class="w3-quarter kaydirici" style="text-align: left; color:#f9f9f9;font-weight: 600;min-width: 250px">
+      <h4 style="text-align: left;margin-left: 35px;font-weight: 700;color:#b6b6b6;border-bottom: 1px solid #b6b6b6;">Ahiyar Platformu</h4>
       <ul style="list-style-type: none;">
-        <li class="w3-hover"><i class="fa fa-phone" aria-hidden="true"></i> 05302335496</li>
-        <li><i class="fa fa-plane" aria-hidden="true"></i> Gaziantep/Şahinbey</li>
-        <li><i class="fa fa-envelope" aria-hidden="true"></i> ahiyar@gmail.com</li>
-        <li><i class="fa fa-whatsapp" aria-hidden="true"></i> 05302335496</li>
+        <li class="w3-hover"></i> Ahiyar Nedir ?</li>
+        <li>Ahiyar Organizasyonu</li>
+        <li>Temel Değerler</li>
+        <li>Gönüllülük</li>
         
+      </ul>
+      
+    </div>
+
+    <div class="w3-quarter kaydirici" style="text-align: left; color:#f9f9f9;font-weight: 600;min-width: 250px">
+      <h4 style="text-align: left;margin-left: 35px;font-weight:900;color:#b6b6b6;border-bottom: 1px solid #b6b6b6;">Çalışma Gruplarımız</h4>
+      <ul style="list-style-type: none;">
+        <li>Yardımlaşma Kurulu</li>
+        <li class="w3-hover"></i>Eğlence Kurulu</li>
+        <li>İnsanlık Kurulu</li>
+        <li>Eğitim Kurulu</li>
       </ul>
       
     </div>
@@ -350,7 +392,7 @@ function onLoader() {
 }
 
 function showPage() {
-  document.getElementById("loader").style.display = "none";
+  //document.getElementById("loader").style.display = "none";
   document.getElementById("bgloader").style.display="none";
 }
 
